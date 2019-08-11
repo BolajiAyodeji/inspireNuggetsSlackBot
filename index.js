@@ -2,14 +2,14 @@ const slackBot = require('slackbots');
 const axios = require('axios');
 
 const bot = new slackBot({
-    token: 'xoxb-407013445267-716724698481-Cu0L8fmrgflTIopVn4m8EO7A',
+    token: 'xoxb-407013445267-716724698481-ebog3wkkqF2VOorGWXn1ygmg',
     name: 'inspirenuggets'
 })
 
 // Start Handler
 bot.on('start', () => {
     const params = {
-        icon_emoji: ':smiley:'
+        icon_emoji: ':robot_face:'
     }
 
     bot.postMessageToChannel(
@@ -32,9 +32,9 @@ bot.on('message', (data) => {
     handleMessage(data.text);
 })
 
-// REsponse Handler
+// Response Handler
 function handleMessage(message) {
-    if(message.includes(' inspireme')) {
+    if(message.includes(' inspire me')) {
         inspireMe();
     }
 }
@@ -43,11 +43,10 @@ function handleMessage(message) {
 function inspireMe() {
     axios.get('https://raw.githubusercontent.com/BolajiAyodeji/inspireNuggets/master/src/quotes.json')
       .then(res => {
-          const quotes = res.data;
-          random = Math.floor(Math.random() * data.length);
-
-         quote  = data[random].quote;
-         author = data[random].author;
+            const quotes = res.data;
+            const random = Math.floor(Math.random() * quotes.length);
+            const quote = quotes[random].quote
+            const author = quotes[random].author
 
             const params = {
                 icon_emoji: ':smiley:'
@@ -55,7 +54,7 @@ function inspireMe() {
         
             bot.postMessageToChannel(
                 'random',
-                `yen yen yen: ${quote}`,
+                `:zap: ${quote} - ${author}`,
                 params
             );
 
