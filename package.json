@@ -1,0 +1,19 @@
+{
+  "name": "slackbot",
+  "version": "1.0.0",
+  "description": "A simple Slackbot that displays random inspiring techie quotes for developers/designers.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BolajiAyodeji/slackbot.git"
+  },
+  "author": "Bolaji Ayodeji",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BolajiAyodeji/slackbot/issues"
+  },
+  "homepage": "https://github.com/BolajiAyodeji/slackbot#readme"
+}
