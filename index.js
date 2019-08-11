@@ -1,8 +1,11 @@
-const slackBot = require('slackbots');
-const axios = require('axios');
+const SlackBot = require('slackbots');
+const axios = require('axios')
+const dotenv = require('dotenv')
 
-const bot = new slackBot({
-    token: 'xoxb-407013445267-716724698481-ebog3wkkqF2VOorGWXn1ygmg',
+dotenv.config()
+
+const bot = new SlackBot({
+    token: `${process.env.BOT_TOKEN}`,
     name: 'inspirenuggets'
 })
 
@@ -54,7 +57,7 @@ function inspireMe() {
         
             bot.postMessageToChannel(
                 'random',
-                `:zap: ${quote} - ${author}`,
+                `:zap: ${quote} - *${author}*`,
                 params
             );
 
