@@ -28,7 +28,7 @@ BOT_TOKEN=YOUR_OWN_BOT_TOKEN
 ```js
 const bot = new SlackBot({
     token: `${process.env.BOT_TOKEN}`,
-    name: 'inspirenuggets'
+    name: 'YOUR_OWN_APP_NAME'
 })
 ```
 
