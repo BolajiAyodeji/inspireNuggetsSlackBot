@@ -6,12 +6,31 @@
 
 A simple Slackbot that displays random inspiring techie quotes and jokes for developers/designers :zap:
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-
-[![made in nigeria](https://img.shields.io/badge/made%20in-nigeria-008751.svg?style=for-the-badge)](https://github.com/acekyd/made-in-nigeria)
-
 </div>
 
+# Setup
+
+## Install dependencies
+
+```
+npm install
+
+npm start
+```
+
+## [Create a bot in Slack](https://api.slack.com/apps/AM92STGGG/general?) and generate and include your OAuth bot token
+
+```
+// Add this in your .env
+BOT_TOKEN=YOUR_OWN_BOT_TOKEN
+```
+
+```js
+const bot = new SlackBot({
+    token: `${process.env.BOT_TOKEN}`,
+    name: 'inspirenuggets'
+})
+```
 
 ## Author
 [Bolaji Ayodeji](https://github.com/BolajiAyodeji)
