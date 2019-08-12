@@ -17,7 +17,7 @@ bot.on('start', () => {
 
     bot.postMessageToChannel(
         'random',
-        'Get inspired while working with @inspireNuggets!',
+        'Get inspired while working with @inspirenuggets :robot_face:',
         params
     );
 })
@@ -38,11 +38,15 @@ bot.on('message', (data) => {
 // Response Handler
 function handleMessage(message) {
     if(message.includes(' inspire me')) {
-        inspireMe();
+        inspireMe()
+    } else if(message.includes(' random joke')) {
+        randomJoke()
+    } else if(message.includes(' help')) {
+        runHelp()
     }
 }
 
-// inspire User
+// inspire Me
 function inspireMe() {
     axios.get('https://raw.githubusercontent.com/BolajiAyodeji/inspireNuggets/master/src/quotes.json')
       .then(res => {
@@ -52,7 +56,7 @@ function inspireMe() {
             const author = quotes[random].author
 
             const params = {
-                icon_emoji: ':smiley:'
+                icon_emoji: ':male-technologist:'
             }
         
             bot.postMessageToChannel(
@@ -62,4 +66,36 @@ function inspireMe() {
             );
 
       })
+}
+
+// Random Joke
+function randomJoke() {
+    axios.get('https://api.chucknorris.io/jokes/random')
+      .then(res => {
+            const joke = res.data.value;
+
+            const params = {
+                icon_emoji: ':smile:'
+            }
+        
+            bot.postMessageToChannel(
+                'random',
+                `:zap: ${joke}`,
+                params
+            );
+
+      })
+}
+
+// Show Help
+function runHelp() {
+    const params = {
+        icon_emoji: ':question:'
+    }
+
+    bot.postMessageToChannel(
+        'random',
+        `Type *@inspirenuggets* with *inspire me* to get an inspiring techie quote and *random joke* to get a Chuck Norris random joke`,
+        params
+    );
 }
