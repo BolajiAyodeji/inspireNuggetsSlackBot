@@ -10,7 +10,7 @@ A simple Slackbot that displays random inspiring techie quotes and jokes for dev
 
 # Setup
 
-## Install dependencies
+### Istall dependencies
 
 ```
 npm install
@@ -18,7 +18,7 @@ npm install
 npm start
 ```
 
-## [Create a bot in Slack](https://api.slack.com/apps/AM92STGGG/general?) and generate and include your OAuth bot token
+### [Create a bot in Slack](https://api.slack.com/apps/AM92STGGG/general?) and generate and include your OAuth bot token
 
 ```
 // Add this in your .env
