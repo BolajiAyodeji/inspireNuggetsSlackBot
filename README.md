@@ -4,7 +4,8 @@
 
 ![inspireNuggets](https://github.com/BolajiAyodeji/inspireNuggets/raw/master/tab-icon.png)
 
-A simple Slackbot that displays random inspiring techie quotes and jokes for developers/designers :zap:
+A simple Slackbot that displays random inspiring techie quotes and jokes for developers/designers :zap: <br>
+> This bot is powered by the original [inspireNuggets Chrome Browser Extension](https://github.com/BolajiAyodeji/inspireNuggets) quotes and [Chuck Norris Jokes API](https://api.chucknorris.io/)
 
 </div>
 
