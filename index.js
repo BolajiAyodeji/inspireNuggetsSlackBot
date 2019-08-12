@@ -17,13 +17,13 @@ bot.on('start', () => {
 
     bot.postMessageToChannel(
         'random',
-        'Get inspired while working with @inspirenuggets :robot_face:',
+        'Get inspired while working with @inspirenuggets',
         params
     );
 })
 
 // Error Handler
-bot.on('eror', (err) => {
+bot.on('error', (err) => {
     console.log(err);
 })
 
@@ -95,7 +95,7 @@ function runHelp() {
 
     bot.postMessageToChannel(
         'random',
-        `Type *@inspirenuggets* with *inspire me* to get an inspiring techie quote and *random joke* to get a Chuck Norris random joke`,
+        `Type *@inspirenuggets* with *inspire me* to get an inspiring techie quote, *random joke* to get a Chuck Norris random joke and *help* to get this instruction again`,
         params
     );
 }
