@@ -11,7 +11,7 @@ A simple Slackbot that displays random inspiring techie quotes and jokes for dev
 
 # Setup
 
-### Istall dependencies
+### Install dependencies
 
 ```
 npm install
