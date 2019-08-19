@@ -1,6 +1,6 @@
-# inspireNuggets SlackBot
-
 <div align="center">
+    
+# inspireNuggets SlackBot
 
 ![inspireNuggets](https://github.com/BolajiAyodeji/inspireNuggets/raw/master/tab-icon.png)
 
