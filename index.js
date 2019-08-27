@@ -98,10 +98,11 @@ function runHelp() {
     );
 }
 
+
+// Slack App directory submission 302 server
 const http = require('http');
 const fs = require('fs');
  
-// create a http server
 http.createServer(function (req, res) {
     
     if (req.url == '/') {
