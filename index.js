@@ -15,7 +15,7 @@ bot.on('start', () => {
 
     bot.postMessageToChannel(
         'random',
-        'Get inspired while working with @inspirenuggets \n',
+        'Get inspired while working with @inspirenuggets',
         params
     );
 })
