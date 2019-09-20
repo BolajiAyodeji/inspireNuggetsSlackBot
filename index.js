@@ -1,5 +1,6 @@
 const SlackBot = require('slackbots');
 const axios = require('axios')
+const pingmydyno = require('pingmydyno');
 require('dotenv').config();
 
 const bot = new SlackBot({
@@ -117,4 +118,6 @@ http.createServer(function (req, res) {
                 return res.end();
         });
     } 
-}).listen(`${process.env.PORT}`);
+}).listen(`${process.env.PORT}`, () => {
+    pingmydyno('https://myapp.herokuapp.com');
+});
