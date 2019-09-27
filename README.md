@@ -15,6 +15,12 @@ A simple Slackbot that displays random inspiring techie quotes and jokes for dev
 
 # Setup
 
+### Clone the repository
+
+```
+git clone https://github.com/BolajiAyodeji/inspireNuggetsSlackBot.git && cd inspireNuggetsSlackBot
+```
+
 ### Install dependencies
 
 ```
