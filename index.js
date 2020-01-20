@@ -119,5 +119,5 @@ http.createServer(function (req, res) {
         });
     } 
 }).listen(`${process.env.PORT}`, () => {
-    pingmydyno('https://myapp.herokuapp.com');
+    pingmydyno('https://inspirenuggets-slackbot.herokuapp.com/');
 });
