@@ -9,7 +9,7 @@ A simple Slackbot that displays random inspiring techie quotes and jokes for dev
 
 <a href="https://slack.com/oauth/authorize?client_id=407013445267.723094934560&scope=bot"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"></a>
 
-> I wrote an article on how I built this [here](https://www.bolajiayodeji.com/building-a-slackbot-with-node-js-and-slackbots-js/)
+> I wrote an article on how I built this [here](https://bolajiayodeji.com/building-a-slackbot-with-nodejs-and-slackbotsjs-cjz8gh7zg000exfs1tq2z5zzu)
 
 </div>
 
