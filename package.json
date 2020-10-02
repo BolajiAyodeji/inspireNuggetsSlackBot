@@ -1,31 +1,20 @@
 {
-  "name": "inspireNuggetsSlackBot",
-  "version": "1.0.0",
-  "description": "A simple Slackbot that displays random inspiring techie quotes and jokes for developers/designers.",
-  "main": "index.js",
-  "engines": {
-    "node": "10.16.0"
-  },
+  "name": "role-rotator",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "nodemon index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BolajiAyodeji/inspireNuggetsSlackBot.git"
-  },
-  "author": "Bolaji Ayodeji",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/BolajiAyodeji/inspireNuggetsSlackBot/issues"
-  },
-  "homepage": "https://github.com/BolajiAyodeji/inspireNuggetsSlackBot#readme",
-  "devDependencies": {
-    "nodemon": "^1.19.1"
+    "start": "node ./bin/www"
   },
   "dependencies": {
-    "axios": "^0.19.0",
-    "dotenv": "^8.0.0",
-    "pingmydyno": "^1.5.1",
-    "slackbots": "^1.2.0"
+    "@slack/web-api": "^5.12.0",
+    "axios": "^0.20.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "lodash": "^4.17.20",
+    "morgan": "~1.9.1"
   }
 }
