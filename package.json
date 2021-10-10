@@ -23,7 +23,7 @@
     "nodemon": "^1.19.1"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "dotenv": "^8.0.0",
     "pingmydyno": "^1.5.1",
     "slackbots": "^1.2.0"
